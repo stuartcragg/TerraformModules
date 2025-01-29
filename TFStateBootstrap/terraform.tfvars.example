@@ -1,0 +1,6 @@
+subscription_id = "" // Azure SubscriptionD for the Terraform State Deployment
+tenant_id       = "" // TenantID for the Terraform State Deployment
+tf_state_rg     = "" // Resource Group Name for the Terraform State Deployment
+environment     = "" // Environment for the Terraform State Deployment
+location        = "" // Azure Region for the Terraform State Deployment
+storage_account = "" // Storage Account Name for the Terraform State Deployment
