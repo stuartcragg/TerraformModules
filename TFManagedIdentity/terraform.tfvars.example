@@ -1,0 +1,3 @@
+rg_name         = "" // Resource Group Name for the Deployment
+location        = "" // Azure Region for the Terraform State Deployment
+mi_name         = "" // Name of the managed identity
