@@ -31,7 +31,7 @@ resource "azurerm_resource_group" "rg" {
 
 //Create the outputs
 
-output "resource_group_name" {
+output "rg_name" {
     description = "The name of the resource group"
     value = azurerm_resource_group.rg.name
 }
