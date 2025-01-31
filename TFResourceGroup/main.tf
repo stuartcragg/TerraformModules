@@ -23,7 +23,7 @@ provider "azurerm" {
 // Create the resource group
 
 resource "azurerm_resource_group" "rg" {
-  name     = lower(var.rg_name)
+  name     = lower(var.resource_group_name)
   location = var.location
 
   tags = var.tags
@@ -31,12 +31,12 @@ resource "azurerm_resource_group" "rg" {
 
 //Create the outputs
 
-output "rg_name" {
+output "resource_group_name" {
     description = "The name of the resource group"
     value = azurerm_resource_group.rg.name
 }
 
-output "rg_id" {
+output "resource_group_id" {
     description = "ID of the resource group"
     value = azurerm_resource_group.rg.id
 }

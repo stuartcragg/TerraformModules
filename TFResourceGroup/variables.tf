@@ -8,12 +8,14 @@ variable "tenant_id" {
   description = "Azure tenant ID for the deployment"
 }
 
-variable "rg_name" {
+variable "resource_group_name" {
   description = "New Resource Group will be created with this name"
+  type = string
 }
 
 variable "location" {
   description = "Azure region for the deployment"
+  type = string
 }
 
 variable "tags" {

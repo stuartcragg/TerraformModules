@@ -11,20 +11,20 @@ terraform {
 
 // Create the user assigned managed identity
 
-resource "azurerm_user_assigned_identity" "user_assigned_identity" {
+resource "azurerm_user_assigned_identity" "mi" {
+  resource_group_name = var.resource_group_name
   location            = var.location
-  name                = var.mi_name
-  resource_group_name = var.rg_name
+  name                = var.identity_name  
 }
 
 // Outputs
 
-output "mi_name" {
+output "identity_name" {
   description = "Name of the managed identity"
-  value = azurerm_user_assigned_identity.user_assigned_identity.name
+  value = azurerm_user_assigned_identity.mi.name
 }
 
-output "mi_id" {
+output "identity_id" {
   description = "Resource ID of the managed identity"
-  value = azurerm_user_assigned_identity.user_assigned_identity.id
+  value = azurerm_user_assigned_identity.mi.id
 }
