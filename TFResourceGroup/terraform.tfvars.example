@@ -1,4 +1,4 @@
-subscription_id = "" // Azure SubscriptionD for the Terraform State Deployment
+subscription_id = "" // Azure SubscriptionID for the Terraform State Deployment
 tenant_id       = "" // TenantID for the Terraform State Deployment
-rg_name         = "" // Resource Group Name for the Deployment
+resource_group_name = "" // Resource Group Name for the Deployment
 location        = "" // Azure Region for the Terraform State Deployment
