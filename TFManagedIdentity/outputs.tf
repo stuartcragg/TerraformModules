@@ -16,6 +16,6 @@ output "identity_client_id" {
 }
 
 output "identity_principal_id" {
-  description = "The client ID of the managed identity"
+  description = "The object (principal) ID of the managed identity"
   value = azurerm_user_assigned_identity.mi.principal_id
 }
