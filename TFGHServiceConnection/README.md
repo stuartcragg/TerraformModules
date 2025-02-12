@@ -13,7 +13,7 @@ The following variables are required. Example files for variables.tf and terrafo
 - `mi_name` : Name of the managed identity that will be used for OpenID Connect.
 - `github_org` : GitHub Organization name for the OpenID Connect Credential.
 - `github_repo` : Spefic Repo for OpenID Connect.
-- `scope` : Scope that the managed identity will be granted permission to. In resourceID format ("subscriptions/xxx-xxx-xxx-xx/resourceGroups/rg-my-resource-group-uks-001")
+- `scope` : Scope that the managed identity will be granted permission to. In resourceID format.
 
 
 
